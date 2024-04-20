@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/productos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- Incluir el menú -->
+        <script>
+            fetch("menu.html")
+                .then((response) => response.text())
+                .then((data) => (document.querySelector("header").innerHTML = data));
+        </script>
+    </header>
+    <main>
+        <div class="productos">
+            <div class="polaroid">
+                <div class="container">
+                    <h1>Aretes</h1>
+                </div>
+                <img src="/img/aretes.jpg" alt="Norway" style="width:270px; height: 220px;">
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptas?</p>
+            </div>
+            <div class="polaroid">
+                <div class="container">
+                    <h1>Collares</h1>
+                </div>
+                <img src="/img/aretes.jpg" alt="Norway" style="width:270px; height: 220px;">
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, beatae.</p>
+            </div>
+            <div class="polaroid">
+                <div class="container">
+                    <h1>Manillas</h1>
+                </div>
+                <img src="/img/aretes.jpg" alt="Norway" style="width:270px; height: 220px;">
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, illo.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Incluir el footer -->
+        <script>
+            fetch("footer.html")
+                .then((response) => response.text())
+                .then((data) => (document.querySelector("footer").innerHTML = data));
+        </script>
+    </footer>
+</body>
+</html>

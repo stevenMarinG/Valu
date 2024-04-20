@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- Incluir el menú -->
+        <script>
+            fetch("menu.html")
+                .then((response) => response.text())
+                .then((data) => (document.querySelector("header").innerHTML = data));
+        </script>
+    </header>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, doloribus ratione! Reiciendis consectetur,
+        vel consequatur hic voluptas sed aliquid nam nihil ducimus veritatis quae commodi eveniet magnam quibusdam
+        magni. Impedit reprehenderit aliquam omnis, qui cum magnam consectetur perspiciatis pariatur. Error, sit?
+        Cupiditate dolores aut asperiores eius eaque in similique ipsa, consectetur minus ex vitae, tenetur temporibus
+        illum aperiam ea ratione aliquam rem exercitationem! Explicabo laboriosam cupiditate ea dolores dolor autem
+        facere? Consequuntur assumenda sint voluptas. Laudantium cum corporis ad magni laboriosam necessitatibus eius,
+        iusto ipsa repudiandae labore cupiditate id quisquam iste aliquam eum minima autem debitis modi corrupti
+        praesentium quae?</p>
+    <footer>
+        <!-- Incluir el footer -->
+        <script>
+            fetch("footer.html")
+                .then((response) => response.text())
+                .then((data) => (document.querySelector("footer").innerHTML = data));
+        </script>
+    </footer>
+</body>
+
+</html>
