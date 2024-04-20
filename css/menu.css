@@ -10,6 +10,7 @@ body {
     height: 50px;
     background-color: #EBDFE3;
     justify-content: space-around;
+    text-decoration: none;
 }
 
 .value {
