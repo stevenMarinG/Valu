@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png">
     <title>Inicio</title>
     <link rel="stylesheet" href="/css/inicio.css">
+    <link rel="stylesheet" href="/css/productos.css">
+    <link rel="stylesheet" href="/css/manesaje.css">
+
 </head>
 
 <body>
@@ -23,20 +27,17 @@
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="/img/aretes.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <img src="/img/aretes.jpg" style="width:100%" height="650px">
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="/img/aretes.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
+                <img src="/img/aretes.jpg" style="width:100%" height="650px">
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="/img/aretes.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
+                <img src="/img/aretes.jpg" style="width:100%" height="650px">
             </div>
 
             <!-- Next and previous buttons -->
@@ -52,15 +53,103 @@
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </main>
-    <footer>
-        <!-- Incluir el footer -->
-        <script>
-            fetch("footer.html")
-                .then((response) => response.text())
-                .then((data) => (document.querySelector("footer").innerHTML = data));
-        </script>
-    </footer>
-    <script src="/js/inicio.js"></script>
+
+    <h1>
+        <center>DESCUBRE NUESTRAS COLECIONES</center>
+    </h1>
+    <main>
+        <div class="productos">
+            <div class="polaroid">
+                <div class="container"><a href="aretes.html">
+                        <h1>Aretes</h1>
+                </div>
+                <img src="/img/aretes.jpg" alt="Norway" style="width:270px; height: 220px;">
+                </a>
+            </div>
+            <div class="polaroid">
+                <div class="container"><a href="collares.html">
+                        <h1>Collares</h1>
+                </div>
+                <img src="/img/aretes.jpg" alt="Norway" style="width:270px; height: 220px;">
+                </a>
+            </div>
+            <div class="polaroid"><a href="manillas.html">
+                    <div class="container">
+                        <h1>Manillas</h1>
+                    </div>
+                    <img src="/img/aretes.jpg" alt="Norway" style="width:270px; height: 220px;">
+                </a>
+            </div>
+            <div class="polaroid"><a href="earcuffs.html">
+                    <div class="container">
+                        <h1>Earcuffs</h1>
+                    </div>
+                    <img src="/img/aretes.jpg" alt="Norway" style="width:270px; height: 220px;">
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="poster">
+            <div class="poster-img">
+                <div class="poster-img"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M190.5 68.8L225.3 128H224 152c-22.1 0-40-17.9-40-40s17.9-40 40-40h2.2c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H480c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H438.4c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88h-2.2c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0H152C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40H288h-1.3l34.8-59.2C329.1 55.9 342.9 48 357.8 48H360c22.1 0 40 17.9 40 40zM32 288V464c0 26.5 21.5 48 48 48H224V288H32zM288 512H432c26.5 0 48-21.5 48-48V288H288V512z" />
+                    </svg>
+                    <p><strong>Empaque</strong>
+                    Especial para regalo</p>
+                </div>
+                <div class="poster-img"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M80 48a48 48 0 1 1 96 0A48 48 0 1 1 80 48zm64 193.7v65.1l51 51c7.1 7.1 11.8 16.2 13.4 26.1l15.2 90.9c2.9 17.4-8.9 33.9-26.3 36.8s-33.9-8.9-36.8-26.3l-14.3-85.9L66.8 320C54.8 308 48 291.7 48 274.7V186.6c0-32.4 26.2-58.6 58.6-58.6c24.1 0 46.5 12 59.9 32l47.4 71.1 10.1 5V160c0-17.7 14.3-32 32-32H384c17.7 0 32 14.3 32 32v76.2l10.1-5L473.5 160c13.3-20 35.8-32 59.9-32c32.4 0 58.6 26.2 58.6 58.6v88.1c0 17-6.7 33.3-18.7 45.3l-79.4 79.4-14.3 85.9c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l15.2-90.9c1.6-9.9 6.3-19 13.4-26.1l51-51V241.7l-19 28.5c-4.6 7-11 12.6-18.5 16.3l-59.6 29.8c-2.4 1.3-4.9 2.2-7.6 2.8c-2.6 .6-5.3 .9-7.9 .8H256.7c-2.5 .1-5-.2-7.5-.7c-2.9-.6-5.6-1.6-8.1-3l-59.5-29.8c-7.5-3.7-13.8-9.4-18.5-16.3l-19-28.5zM2.3 468.1L50.1 348.6l49.2 49.2-37.6 94c-6.6 16.4-25.2 24.4-41.6 17.8S-4.3 484.5 2.3 468.1zM512 0a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm77.9 348.6l47.8 119.5c6.6 16.4-1.4 35-17.8 41.6s-35-1.4-41.6-17.8l-37.6-94 49.2-49.2z" />
+                </svg>
+                <p><strong>Envios</strong>
+                    a todo el pais</p>
+                </div>
+                <div class="poster-img"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M163.9 136.9c-29.4-29.8-29.4-78.2 0-108s77-29.8 106.4 0l17.7 18 17.7-18c29.4-29.8 77-29.8 106.4 0s29.4 78.2 0 108L310.5 240.1c-6.2 6.3-14.3 9.4-22.5 9.4s-16.3-3.1-22.5-9.4L163.9 136.9zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z" />
+                    </svg>
+                    <p><strong>Producto</strong>
+                        100% colombiano</p>
+                </div>
+            </div>
+        </div>
+
+<!--<main>
+            <div class="carrusel">
+
+            
+                <div class="fade">
+                    <div class="texto">POR COMPRAS MAYORES A $90.000 TENDRÁS EL ENVÍO GRATIS</div>
+                </div>
+                <div class="fade">
+                    <div class="texto">DESCUENTO DEL 20% EN TODOS LOS PRODUCTOS</div>
+                </div>
+                <div class="fade">
+                    <div class="texto">OFERTA ESPECIAL: LLEVA 2 Y PAGA 1</div>
+                </div>
+        
+                
+                <a class="regreso" onclick="plusSlides(-1)">&#10094;</a>
+                
+                <a class="avance" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </main>-->
+
+        <footer>
+            <!-- Incluir el footer -->
+            <script>
+                fetch("footer.html")
+                    .then((response) => response.text())
+                    .then((data) => (document.querySelector("footer").innerHTML = data));
+            </script>
+        </footer>
+        <script src="/js/inicio.js"></script>
 </body>
 
 </html>
