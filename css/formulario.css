@@ -1,0 +1,79 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    min-height: 100vh;
+    background: rgb(250, 173, 238);
+    padding-bottom: 70px;
+}
+#formulario form{
+    padding: 20px;
+    width: 700px;
+    background-color: #fde8ef;
+    box-shadow: o 5px 10px black;
+}
+#formulario form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+#formulario form .row .coll{
+    flex: 1 1 250px;
+}
+#formulario form .row .coll .title{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+#formulario form .row .coll .inputBox{
+    margin: 15px 0;
+
+}
+#formulario form .row .coll .inputBox span{
+    margin-bottom: 5px;
+    display: block;
+}
+#formulario form .row .coll .inputBox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+#formulario form .row .coll .inputBox input:focus{
+    border: 1px solid #000;
+}
+#formulario form .row .coll .flex{
+    display: flex;
+    gap: 15px;
+}
+#formulario form .row .coll .flex .inputBox{
+    margin-top: 2px;
+}
+#formulario form .row .coll .inputBox img{
+    height: 80px;
+    margin-top: 10px;
+    filter: drop-shadow(0 0 1px #000);
+}
+#formulario form #btn-pagar{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: crimson;
+    color: #ccc;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#formulario form #btn-pagar:hover{
+    background: #000;
+}
