@@ -27,66 +27,115 @@
             si. Completa tu look con nuestras <strong>pulseras,cadenas, Manillas y Earcuffs</strong> llenas con mensajes positivos.</p>
     </div>
     <hr>
-    <main>
-        <div class="productos">
-            <div class="polaroid">
-                <div class="container">
-                    <h1>Collar corazón brillante </h1>
-                </div>
-                <img src="/img/Collar corazon brillante.jpg" alt="Collar corazón brillante" style="width:270px; height: 220px;">
-                <p class="descripcion"> Precio: 43.000</p>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Hoja dorada</span>
+                <img src="/img/Hoja dorada.jpg" alt="" class="img-item">
+                <span class="precio-item">$20.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
             </div>
-            <div class="polaroid">
-                <div class="container">
-                    <h1>Cadena LOVE </h1>
-                </div>
-                <img src="/img/Cadena love puesta.jpg" alt="Cadena love" style="width:270px; height: 220px;">
-                <p class="descripcion"> Precio: 32.000</p>
+            <div class="item">
+                <span class="titulo-item">Gota plateada/span>
+                <img src="/img/Gota plateada.jpg" alt="" class="img-item">
+                <span class="precio-item">$25.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
             </div>
-            <div class="polaroid">
-                <div class="container">
-                    <h1>Collar osito</h1>
-                </div>
-                <img src="/img/Oso cerca.jpg" alt="Oso colgante" style="width:270px; height: 220px;">
-                <p class="descripcion"> Precio: 30.000 </p>
+            <div class="item">
+                <span class="titulo-item">Candonga mediana</span>
+                <img src="/img/Aretes candonga gruesa pequeña.jpg" alt="" class="img-item">
+                <span class="precio-item">$30.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
             </div>
-            <div class="polaroid">
-                <div class="container">
-                    <h1>Cadena corazón naranja</h1>
-                </div>
-                <img src="/img/Cadena corazon naranja.jpg" alt="corazon naranja" style="width:270px; height: 220px;">
-                <p class="descripcion"> Precio: 28.000 </p>
+            <div class="item">
+                <span class="titulo-item">Candonga gruesa plateada</span>
+                <img src="/img/Aretes plateado candonga gruesa.jpg" alt="" class="img-item">
+                <span class="precio-item">$35.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
             </div>
-            <div class="polaroid">
-                <div class="container">
-                    <h1>Cadena lisa</h1>
-                </div>
-                <img src="/img/Serpiente lisa.jpg" alt="cadena lisa" style="width:270px; height: 220px;">
-                <p class="descripcion"> Precio: 20.000 </p>
+            <div class="item">
+                <span class="titulo-item">Gota mediana dorada</span>
+                <img src="/img/Gota mediana dorda.jpeg" alt="" class="img-item">
+                <span class="precio-item">$28.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
             </div>
-            <div class="polaroid">
-                <div class="container">
-                    <h1>Cadena carita feliz</h1>
-                </div>
-                <img src="/img/Cadena cara feliz dorada.jpg" alt="cara feliz" style="width:270px; height: 220px;">
-                <p class="descripcion"> Precio: 30.000 </p>
+            <div class="item">
+                <span class="titulo-item">Aretes tejidos naranja</span>
+                <img src="/img/Aretes tejidos naranja puestos.jpg" alt="" class="img-item">
+                <span class="precio-item">$23.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
             </div>
-            <div class="polaroid">
-                <div class="container">
-                    <h1>Collar DIANA</h1>
-                </div>
-                <img src="/img/Collar doble corazon brillante.jpg" alt="collar diana" style="width:270px; height: 220px;">
-                <p class="descripcion"> Precio: 40.000 </p>
+            <div class="item">
+                <span class="titulo-item">Gota brillante grande</span>
+                <img src="/img/Gota brillante grande.jpeg" alt="" class="img-item">
+                <span class="precio-item">$34.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
             </div>
-            <div class="polaroid">
-                <div class="container">
-                    <h1>Collar estrellas</h1>
-                </div>
-                <img src="/img/collar largo estrellas puesto.jpg" alt="collar estrellas" style="width:270px; height: 220px;">
-                <p class="descripcion"> Precio: 38.000 </p>
+            <div class="item">
+                <span class="titulo-item">Sir Blue</span>
+                <img src="img/sirblue.png" alt="" class="img-item">
+                <span class="precio-item">$32.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Middlesteel</span>
+                <img src="img/middlesteel.png" alt="" class="img-item">
+                <span class="precio-item">$42.800</span>
+                <button class="boton-item">Agregar al Carrito</button>
             </div>
         </div>
-    </main>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!--
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                    <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                    
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
     <footer>
         <!-- Incluir el footer -->
         <script>
