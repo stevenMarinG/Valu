@@ -71,3 +71,21 @@ body {
 a{
     text-decoration: none;
 }
+.links a{
+    color: black;
+    display:  block;
+    padding: 5px;
+    
+}
+.links{
+    background-color: #f9f9f9f9;
+    width: 110px;
+    display: none;
+
+}
+.links a:hover {
+    background-color: #d8a4b6;
+}
+.desplegable:hover .links{
+    display: block;
+}

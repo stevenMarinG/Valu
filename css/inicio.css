@@ -7,7 +7,7 @@
     max-width: 1000px;
     position: relative;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 /* Hide the images by default */
@@ -104,7 +104,7 @@
 
 div.polaroid {
     width: 400px;
-    height: 500px;
+    height: 400px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     border-radius: 10px;
@@ -124,22 +124,18 @@ div.polaroid:hover {
 .boton {
     width: 130px;
     font-size: 20px;
-    padding: 12px 28px;
+    padding: 12px 12px;
     border-radius: 12px;
-    background-color: #fdb3cb;
-    color: rgb(0, 0, 0);
-    border: 2px solid #940253;
+    background-color: #ffe0ea;
     transition-duration: 0.4s;
     align-items: center;
     margin-left: 46%;
     text-decoration: none;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 70px;
 }
 
 .boton:hover {
-    background-color: #940253;
-    color: rgb(255, 255, 255);
+    background-color: #f9f9f9;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 
 }
@@ -236,9 +232,6 @@ div.polaroid:hover {
 .frase h3 {
     flex: 0 0 auto;
     width: auto;
-    max-width: 100%;
-    padding: 0 15px;
-    position: relative;
     z-index: 2;
     font-size: 25px;
 }
@@ -251,18 +244,16 @@ div.polaroid:hover {
 }
 
 .sub-frase {
-    flex: 0 0 auto;
     width: auto;
     max-width: 100%;
     padding: 0 15px;
     position: relative;
     z-index: 2;
     font-size: 18px;
-    display: flex;
+  
     justify-content: center;
     align-items: center;
 }
-/*seccion contenedor */
 .contenedor {
     max-width: 1200px;
     padding: 1px;
@@ -287,7 +278,7 @@ div.polaroid:hover {
 
 .contenedor .contenedor-items .item {
     max-width: 300px;
-    margin: auto;
+    margin: 8px;
     border: 1px solid #666;
     border-radius: 10px;
     padding: 20px;
@@ -296,6 +287,7 @@ div.polaroid:hover {
 
 .contenedor .contenedor-items .item .img-item {
     width: 100%;
+    height: 290px;
 }
 
 .contenedor .contenedor-items .item:hover {
@@ -316,7 +308,6 @@ div.polaroid:hover {
     font-weight: bold;
     font-size: 22px;
 }
-
 .imagen{
     margin-bottom: 40px;
 }
