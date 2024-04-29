@@ -22,7 +22,7 @@
 
 .contenedor .contenedor-items .item {
     max-width: 300px;
-    margin: auto;
+    margin: 8px;
     border: 1px solid #666;
     border-radius: 10px;
     padding: 20px;
@@ -31,6 +31,7 @@
 
 .contenedor .contenedor-items .item .img-item {
     width: 100%;
+    height: 290px;
 }
 
 .contenedor .contenedor-items .item:hover {
@@ -175,7 +176,7 @@
     margin-bottom: 10px;
 }
 
-.carrito-total .btn-pagar {
+.carrito-total .btn {
     display: block;
     width: 100%;
     border: none;
@@ -191,7 +192,7 @@
     transition: .3s;
 }
 
-.carrito-total .btn-pagar:hover {
+.carrito-total .btn:hover {
     scale: 1.05;
 }
 
@@ -215,6 +216,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 55px 55px 5px;
+    margin-top: 50px;
 }
 
 .descripcion {
@@ -225,4 +227,181 @@
 
 hr {
     margin: 20px;
+}
+
+/*Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */ 
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* boton Close */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #ffb6ce;
+    color: #181717;
+    border: 1px solid #e4c3ce;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #000000;
+}
+
+.title::before {
+    width: 18px;
+    height: 18px;
+}
+
+.title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #dce7f0;
+}
+
+.message {
+    font-size: 14.5px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    background-color: #ebebeb;
+    color: #000000;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.form label .input+span {
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown+span {
+    top: 12.5px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+    color: #573943;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.input {
+    font-size: medium;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #000000;
+}
+
+.submit:hover {
+    background-color: #ffffff96;
+    color: #000;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
 }
