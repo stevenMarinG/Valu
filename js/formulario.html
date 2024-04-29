@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/formulario.css">
+    <link rel="stylesheet" href="carrito.js">
+    <title>formulario</title>
+</head>
+<body>
+    <div id="formulario">
+        <form action="">
+        <div class="row">
+            <div class="coll">
+                <h3 class="title">Direccio de envio</h3>
+                <div class="inputBox">
+                    <span>Nombres</span>
+                    <input type="text" placeholder="Fernando" required>
+                    <span>Apellidos</span>
+                    <input type="text" placeholder="Tafur Guevara" required>
+                </div>
+                <div class="inputBox">
+                    <span>Email</span>
+                    <input type="email" placeholder="ejempl@gmail.com" required>
+                </div>
+                <div class="inputBox">
+                    <span>Contraseña</span>
+                    <input type="text" placeholder="*********" required>
+                </div>
+                <div class="inputBox">
+                    <span>Pais</span>
+                    <input type="text" placeholder="Colombia">
+                </div>
+                <div class="inputBox">
+                    <span>Ciudad: </span>
+                    <input type="text" placeholder="ciudad">
+                </div>
+                <div class="inputBox">
+                    <span>Codigo postal</span>
+                    <input type="text" placeholder="Calle 127 # 45-63">
+                </div>
+                <div class="inputBox">
+                    <span>Detalle</span>
+                    <input type="text" placeholder="Torre/Apartamento/Oficina/Casa">
+                </div>
+            </div>
+
+            <div class="coll">
+                <h3 class="title">Pago</h3>
+                <div class="inputBox">
+                    <span>Tarjeta aceptada</span>
+                    <img src="/img/pagotarjeta1.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>Nombre de la tarjeta</span>
+                    <input type="text" placeholder="Mr.Maria Jose" required>
+                </div>
+                <div class="inputBox">
+                    <span>Numero de la tarjeta de credito: </span>
+                    <input type="nu" placeholder="1111-2222-3333-4444" required>
+                </div>
+                <div class="inputBox">
+                    <span>Exp Mes: </span>
+                    <input type="text" placeholder="Junio" required >
+                </div>
+                <div class="inputBox">
+                    <span>Exo Año: </span>
+                    <input type="number" placeholder="2022" required>
+                </div>
+                <div class="inputBox">
+                    <span>CVV</span>
+                    <input type="text" placeholder="123" required>
+                </div>
+            </div>
+        </div>
+        <button type="button" id="btn-pagar">Pagar</button>
+        <!--<input type="submit" value="Confirmar" id="btn-pagar">-->
+        </form>
+    </div>
+</body>
+</html>
