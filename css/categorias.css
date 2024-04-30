@@ -67,7 +67,7 @@
 /* seccion carrito */
 .carrito {
     border: 1px solid #666;
-    width: 30%;
+    width: 35%;
     margin-top: 30px;
     border-radius: 10px;
     overflow: hidden;
@@ -78,7 +78,6 @@
     /* Estilos para ocultar */
     margin-right: -100%;
     opacity: 0;
-
 }
 
 .carrito .header-carrito {
@@ -99,9 +98,6 @@
 
 .carrito .carrito-item img {
     margin-right: 20px;
-    width: 28%;
-    height: 90px;
-    
 }
 
 .carrito .carrito-item .carrito-item-titulo {
@@ -220,7 +216,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 55px 55px 5px;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .descripcion {
