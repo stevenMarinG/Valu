@@ -6,7 +6,7 @@ document.getElementById("login").addEventListener("submit", function (event) {
     var password = document.getElementById("password").value;
 
     // Simulación de inicio de sesión (puedes reemplazar esto con tu lógica de autenticación real)
-    if (correo === "majo10@gmail.com" && password === "majo123") {
+    if (correo && password ) {
         // Inicio de sesión exitoso
         alert("Inicio de sesión exitoso. ¡Bienvenido!");
         window.location.href = "html/inicio.html";
