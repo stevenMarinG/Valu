@@ -67,7 +67,7 @@
 /* seccion carrito */
 .carrito {
     border: 1px solid #666;
-    width: 35%;
+    width: 30%;
     margin-top: 30px;
     border-radius: 10px;
     overflow: hidden;
@@ -98,6 +98,9 @@
 
 .carrito .carrito-item img {
     margin-right: 20px;
+    width: 28%;
+    height: 90px;
+    
 }
 
 .carrito .carrito-item .carrito-item-titulo {
@@ -216,7 +219,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 55px 55px 5px;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .descripcion {

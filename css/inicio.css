@@ -1,13 +1,74 @@
 * {
     box-sizing: border-box
 }
+.floating-button {
+    position: fixed;
+    bottom: 60px;
+    right: 24px;
+    background-color: black;
+    color: white;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1100;
+    transition: background-color 0.3s ease;
+}
+
+.floating-button:hover {
+    background-color: #eab1c2;
+}
+
+.iconos-redes {
+    position: fixed;
+    bottom: 120px;
+    right: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.iconos-redes.show {
+    opacity: 1;
+}
+.iconos-redes a {
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos-redes a:hover {
+    background-color: #eab1c2;
+}
+
+.iconos-redes.show a:nth-child(1) {
+    transform: translateY(0px) rotate(0deg);
+    /* Primero icono, no se desplaza */
+}
+
+.iconos-redes.show a:nth-child(2) {
+    transform: translateY(0px) rotate(0deg);
+    /* Segundo icono, no se desplaza */
+}
+
 
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 /* Hide the images by default */
@@ -126,10 +187,10 @@ div.polaroid:hover {
     font-size: 20px;
     padding: 12px 12px;
     border-radius: 12px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    border: 2px solid #940253;
     background-color: #ffe0ea;
+    background-color: #ffffff;
+    color: rgb(92, 92, 92);
+    border: 2px solid #ffffff;
     transition-duration: 0.4s;
     align-items: center;
     margin-left: 46%;
@@ -139,7 +200,7 @@ div.polaroid:hover {
 
 .boton:hover {
     background-color: #f9f9f9;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 12px 16px 0 rgba(102, 101, 101, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -195,6 +256,10 @@ div.polaroid:hover {
     color: #fff;
     margin: 30px 0px 50px 0px;
     height: 500px
+}
+.texto-foto{
+    align-items: center;
+    text-align: center;
 }
 
 .habilidades .contenido-seccion {
