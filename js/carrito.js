@@ -266,3 +266,4 @@ document.getElementById("formCompra").addEventListener("submit", function (event
     vaciarCarrito();
     ocultarCarrito();
 });
+
